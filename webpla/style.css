@@ -1,0 +1,245 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Basic, readable font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+/* Container for consistent width and centering */
+.container {
+    width: 90%; /* Occupy 90% of screen width */
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: auto; /* Center the container */
+    overflow: hidden; /* Clear floats */
+    padding: 0 20px; /* Padding on sides for smaller screens */
+}
+
+/* Header Styles */
+header {
+    background-color: #004d40; /* Dark teal for header */
+    color: #fff; /* White text */
+    padding: 1rem 0;
+    border-bottom: 3px solid #00796b; /* Slightly lighter teal border */
+}
+
+header .container {
+    display: flex; /* Use flexbox for logo and nav on the same line */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Vertically align items */
+}
+
+.logo img {
+    height: 70px; /* Adjust logo size */
+    width: auto;
+    display: block; /* Remove extra space below image */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make nav items display in a row */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+nav ul li a {
+    color: #fff; /* White text for nav links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 0;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #80cbc4; /* Lighter teal on hover */
+}
+
+/* Main Content Section Styles */
+main section {
+    padding: 40px 0;
+    margin-bottom: 20px; /* Space between sections */
+    background-color: #fff; /* White background for content sections */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+main section:first-of-type { /* Style for the first section, e.g., hero */
+    background-color: #e0f2f7; /* Light blue background for hero */
+    text-align: center;
+    padding: 60px 0;
+    box-shadow: none; /* No shadow on hero */
+    border-radius: 0; /* No rounded corners on hero */
+}
+
+#hero h1 {
+    color: #004d40; /* Dark teal for main heading */
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 30px auto; /* Center text and add space below */
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Latest Announcements Section */
+#latest-announcements h2 {
+    color: #004d40;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.announcement-list article {
+    background-color: #f9f9f9;
+    border-left: 5px solid #00796b; /* Accent border */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.announcement-list article h3 {
+    color: #004d40;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.announcement-list article .date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.announcement-list article a {
+    color: #00796b; /* Accent color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.announcement-list article a:hover {
+    text-decoration: underline;
+}
+
+.view-all {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-all a {
+    background-color: #00796b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-all a:hover {
+    background-color: #004d40;
+}
+
+/* Quick Links Section */
+#quick-links h2 {
+    color: #004d40;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+#quick-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Arrange links in a row */
+    flex-wrap: wrap; /* Allow items to wrap to next line on small screens */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between items */
+}
+
+#quick-links ul li {
+    background-color: #e0f2f7; /* Light blue background for quick links */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 calc(33% - 40px); /* Adjust width for 3 items per row on large screens */
+    min-width: 280px; /* Minimum width before wrapping */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#quick-links ul li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#quick-links ul li a {
+    color: #004d40; /* Dark teal text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block; /* Make the whole area clickable */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #263238; /* Darker grey-blue for footer */
+    color: #f4f4f4; /* Light text */
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #80cbc4; /* Lighter teal for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Basic Responsive Adjustments (for smaller screens) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Stack logo and nav vertically */
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust spacing */
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    #quick-links ul li {
+        flex: 1 1 100%; /* Each quick link takes full width on small screens */
+        max-width: none;
+    }
+}
